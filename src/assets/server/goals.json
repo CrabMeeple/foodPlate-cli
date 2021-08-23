@@ -1,0 +1,22 @@
+{
+    "goals": [
+    {
+        "id": 1,
+        "goalTitle": "Lose 10 pounds",
+        "deadline": "12/31/2018",
+        "didIt": false
+    },
+    {
+        "id": 2,
+        "goalTitle": "Lower cholesterol by 30 points",
+        "deadline": "12/31/2018",
+        "didIt": false
+    },
+    {
+        "id": 3,
+        "goalTitle": "Eat an apple a day",
+        "deadline": "12/31/2018",
+        "didIt": false
+    }
+]
+}

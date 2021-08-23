@@ -1,0 +1,15 @@
+<section id="plate">
+  <div id="foodPlateWrapper">
+    <div id="colwrap1">
+      <img [src]="(user.reqsStatus.fruitMet) ? fruitFull : fruitEmpty" id="fruit"/>
+      <img [src]="(user.reqsStatus.vegMet) ? vegFull : vegEmpty" id="veg"/></div>
+    <div id="colwrap2">
+      <img [src]="(user.reqsStatus.grainMet) ? grainDairyFull : grainDairyEmpty" id="grain"/>
+      <div id="logoContainer" class="clearFloat"></div>
+      <img [src]="(user.reqsStatus.proteinMet) ? proteinFull : proteinEmpty" id="protein"/>
+      <div class="clearFloat"></div>
+    </div>
+    <img src="assets/images/plateImages/text.png" id="text" alt=""/>
+  </div>
+  <fp-message></fp-message>
+</section>

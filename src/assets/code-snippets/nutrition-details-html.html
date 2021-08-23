@@ -1,0 +1,19 @@
+<h2>Nutrition Details</h2>
+<section>
+    <table>
+        <thead>
+        <tr>
+            <th>Protein</th>
+            <th>Carbohydrate</th>
+            <th>Total Lipid (Fat)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{ foodItem.nutrients[0].value }} {{ foodItem.nutrients[0].units }}</td>
+            <td>{{ foodItem.nutrients[2].value }} {{ foodItem.nutrients[2].units }}</td>
+            <td>{{ foodItem.nutrients[1].value }} {{ foodItem.nutrients[1].units }}</td>
+        </tr>
+        </tbody>
+    </table>
+</section>

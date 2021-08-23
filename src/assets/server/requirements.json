@@ -1,0 +1,115 @@
+[{"ageGroup" :
+  "F19-30",
+  "requirements" : {
+    "fruit": 2,
+    "protein": 5.5,
+    "dairy": 3,
+    "veg": 2.5,
+    "grain": 6
+  }
+}, {"ageGroup" : "M19-30",
+    "requirements" : {
+    "fruit": 2,
+    "protein": 5.5,
+    "dairy": 3,
+    "veg": 2.5,
+    "grain": 6
+  }
+}, {"ageGroup" : "M51+",
+    "requirements" : {
+    "fruit": 2,
+    "protein": 5.5,
+    "dairy": 3,
+    "veg": 2.5,
+    "grain": 6
+  }
+}, {"ageGroup" : "F31-50",
+    "requirements" : {
+    "fruit": 1.5,
+    "protein": 5,
+    "dairy": 3,
+    "veg": 2.5,
+    "grain": 6
+  }
+}, {"ageGroup" : "M9-13+",
+    "requirements" : {
+    "fruit": 1.5,
+    "protein": 5,
+    "dairy": 3,
+    "veg": 2.5,
+    "grains": 6
+  }
+}, {"ageGroup" : "F51+",
+    "requirements" : {
+    "fruit": 1.5,
+    "protein": 5,
+    "dairy": 3,
+    "veg": 2,
+    "grain": 5
+  }
+}, {"ageGroup" : "F9-13",
+    "requirements" : {
+    "fruit": 1.5,
+    "protein": 5,
+    "dairy": 3,
+    "veg": 2,
+    "grain": 5
+  }
+}, {"ageGroup" : "F14-18",
+    "requirements" : {
+    "fruit": 1.5,
+    "protein": 5,
+    "dairy": 3,
+    "veg": 2.5,
+    "grain": 6
+  }
+}, {"ageGroup" : "F2-3",
+    "requirements" : {
+    "fruit": 1,
+    "protein": 2,
+    "dairy": 2,
+    "veg": 1,
+    "grain": 3
+  }
+}, {"ageGroup" : "M2-3",
+    "requirements" : {
+    "fruit": 1,
+    "protein": 2,
+    "dairy": 2,
+    "veg": 1,
+    "grain": 3
+  }
+}, {"ageGroup" : "M4-8",
+    "requirements" : {
+      "fruit": 1,
+      "protein": 2,
+      "dairy": 2,
+      "veg": 1,
+      "grain": 3
+    }
+  }, {"ageGroup" : "F4-8",
+  "requirements" : {
+    "fruit": 1,
+    "protein": 2,
+    "dairy": 2,
+    "veg": 1,
+    "grain": 3
+  }
+}, {"ageGroup" : "M31-50",
+    "requirements" : {
+    "fruit": 2,
+    "protein": 6,
+    "dairy": 3,
+    "veg": 3,
+    "grain": 7
+  }
+
+}, {"ageGroup" : "M14-18",
+    "requirements" : {
+    "fruit": 2,
+    "protein": 6.5,
+    "dairy": 3,
+    "veg": 3,
+    "grain": 8
+  }
+}]

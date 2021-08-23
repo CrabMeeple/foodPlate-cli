@@ -1,0 +1,26 @@
+/* ***************************************************************** button styles ****************** */
+.fpButton {
+    color:#333;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px #ccc;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    margin:1em;
+    clear: both;
+    border: solid #b8b8b8 2px;
+    border-radius: 10px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff7fb), to(#d1cdcf));
+    background: -moz-linear-gradient(top, #fff7fb, #d1cdcf);
+    box-shadow:rgba(0,0,0,0.5) 4px 4px 24px;
+    cursor: pointer;
+}
+.fpButton:active, .fpButton:hover {
+    background-color: #ececec;
+    box-shadow: 0 0 20px rgba(255,255,255,0.85);
+}
+.fpButton[disabled] {
+    opacity: 0.75;
+}

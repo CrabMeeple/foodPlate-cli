@@ -1,0 +1,31 @@
+<section class="initScreen" *ngIf="newGoalView">
+    <form [formGroup]="goalForm" novalidate>
+        <!--    <label for="id">ID</label>
+            <input type="text"
+                    id="id"
+                    formControlName="id"
+                    value="{{activeGoal?.id}}">-->
+
+        <label for="goalTitle">Title:</label>
+        <input type="text"
+               id="goalTitle"
+               autofocus
+               formControlName="goalTitle"
+               value="{{activeGoal?.goalTitle}}">
+        <label for="deadline" style="display: block">Deadline?</label>
+        <input type="text"
+               id="deadline"
+               formControlName="deadline"
+               value="{{activeGoal?.deadline}}">
+
+        <label for="didIt">Accomplished?</label>
+        <input type="checkbox"
+               id="didIt"
+               formControlName="didIt"
+               (click)="toggleAccomplished(true)"
+               class="checkboxLg checkboxSpacer" value="false">
+
+        <input type="button" class="fpButton blk"
+               value="Save Goal"            (click)="submitGoal(goalForm.value)"/>
+    </form>
+</section>

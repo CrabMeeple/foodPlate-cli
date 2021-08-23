@@ -1,0 +1,13 @@
+.footer--update {
+    color: #F00;
+    font-weight: bold;
+    font-size: .65em;
+    border: 1px solid #000;
+    border-radius: .20em;
+    padding: .35em;
+    background-color: #fff;
+}
+
+.footer--update::after {
+    content: " Update Needed!";
+}

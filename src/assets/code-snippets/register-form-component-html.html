@@ -1,0 +1,27 @@
+<form [formGroup]="regForm"
+      class="box" id="registerForm">
+    <label for="firstname" class="block labelTop">First Name</label>
+    <input type="text" id="firstname"
+           formControlName="firstname" tabindex="1"
+           placeholder="Enter your first name here.">
+    <label for="email" class="block labelTop">Email</label>
+    <input type="email" id="email" formControlName="email"
+           placeholder="Enter your email address here."
+           minlength="5" tabindex="2">
+    <section id="genderFields">
+        <label for="sexF">
+            <input type="radio" name="gender" id="sexF"
+                   value="F" class="radioLg" formControlName="gender" tabindex="3">Female</label>
+        <label for="sexM">
+            <input type="radio" name="gender" id="sexM" formControlName="gender" tabindex="4" value="M" class="radioLg"/>Male
+        </label>
+    </section>
+    <label for="ageGroup" class="block labelTop">Age Group</label>
+    <select id="ageGroup" size="1" formControlName="ageGroup" tabindex="5">
+        <option *ngFor="let group of ageGroups;" value="{{this.group}}">{{this.group}}</option>
+    </select>
+    <input type="submit" tabindex="7"
+           id="register-user"
+           value="Register"
+           class="fpButton box-extra">
+</form>

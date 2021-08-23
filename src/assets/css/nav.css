@@ -1,0 +1,48 @@
+ul {
+    list-style-type: none;
+    background-color: #0071BC;
+    height: 2.25em;
+    margin-top: 0;
+    padding-top: 1em;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+li {
+    color: #fff;
+    text-decoration: none;
+    display:inline;
+    background-image: url(../../assets/images/icons/diamond.svg);
+    background-position:right center;
+    background-repeat: no-repeat;
+    padding-right: 1.45em;
+    padding-left: .45em;
+    cursor: pointer;
+}
+
+
+.active {
+    color: #ef952b;
+}
+
+li:last-child {
+    background: none;
+}
+@media (max-width: 444px) {
+    ul {
+        height: auto;
+        flex-direction:column;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        background: none;
+        margin: .15em;
+        margin-top: .75em;
+        padding-bottom: .25em;
+        border-bottom: 1px solid #FFBC2F;
+        width: 100%;
+        text-align: center;
+    }
+}
