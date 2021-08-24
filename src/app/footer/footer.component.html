@@ -1,1 +1,4 @@
-<p>footer works!</p>
+<footer class="header-footer">
+    <img [src]="icon" [alt]="logoAlt" (click)="moreInfo()" >
+    <p>&copy; 2021 Food Plate Inc. <small [attr.data-version]="versionString" [class.footer--update]="!isCurrent">Version {{versionString}}</small></p>
+</footer>
