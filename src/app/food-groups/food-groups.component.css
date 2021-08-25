@@ -1,0 +1,13 @@
+.isFirst {
+    background-color: #FFBC2F;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: .15em;
+}
+
+.isLast {
+    background-color: #008000;
+    border: 1px solid black;
+    border-radius: 55%;
+    padding: .20em;
+}

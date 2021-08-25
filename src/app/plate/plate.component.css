@@ -1,0 +1,74 @@
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+#colwrap1 {
+    float: left;
+    margin-left: 0;
+    margin-top: 0;
+    width: 112px;
+}
+#fruit {
+    margin-left: 0;
+    margin-top: 0;
+    display: inline;
+    float: left;
+    height: 81px;
+    margin-bottom: 0;
+    width: 112px;
+}
+#veg {
+    margin-left: 0;
+    margin-top: 0;
+    display: inline;
+    float: left;
+    height: 93px;
+    margin-bottom: 0;
+    width: 112px;
+}
+#colwrap2 {
+    float: left;
+    margin-left: 0;
+    margin-top: 0;
+    width: 122px;
+}
+#grain {
+    margin-left: 0;
+    margin-top: 0;
+    display: inline;
+    float: left;
+    height: 93px;
+    margin-bottom: 0;
+    width: 122px;
+}
+#protein {
+    margin-left: 0;
+    margin-top: 0;
+    display: inline;
+    float: left;
+    height: 81px;
+    margin-bottom: 0;
+    width: 122px;
+}
+#text {
+    margin-left: 0;
+    margin-top: -1px;
+    display: inline;
+    float: left;
+    height: 40px;
+    margin-bottom: 0;
+    width: 234px;
+}
+#iconList li {
+    list-style-image:none;
+    display:inline;
+}
+#content {
+    margin-left:10%;
+    margin-right:10%;
+}
+#foodPlateWrapper {
+    width: 235px;
+    margin: 1em auto;
+}

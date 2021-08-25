@@ -1,0 +1,21 @@
+<section id="plate">
+    <div id="foodPlateWrapper">
+      <div id="colwrap1">
+        <img id="fruit" [src]="user.reqsStatus.fruitMet ? fruitFull : fruitEmpty"/>
+        <img id="veg" [src]="user.reqsStatus.vegMet ? vegFull : vegEmpty"/></div>
+      <div id="colwrap2">
+        <img id="grain" [src]="user.reqsStatus.grainMet ? grainDairyFull : grainDairyEmpty"/>
+        <div id="logoContainer" class="clearFloat"></div>
+        <img id="protein" [src]="user.reqsStatus.proteinMet ? proteinFull : proteinEmpty"/>
+        <div class="clearFloat"></div>
+      </div>
+      <img src="assets/images/plateImages/text.png" id="text" alt=""/>
+    </div>
+    <fp-message [user]="user"></fp-message>
+  </section>
+<!-- <img [src]="user.reqsStatus.fruitMet ? fruitFull : fruitEmpty" alt="fruit">
+<img [src]="user.reqsStatus.vegMet ? vegFull : vegEmpty" alt="veg">
+<img [src]="user.reqsStatus.grainMet ? grainDairyFull : grainDairyEmpty" alt="grainDairy">
+<img [src]="user.reqsStatus.proteinMet ? proteinFull : proteinEmpty" alt="protein"> -->
+
+

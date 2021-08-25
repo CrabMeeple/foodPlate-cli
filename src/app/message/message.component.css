@@ -1,0 +1,11 @@
+section {
+    width: 90%;
+    padding: .75em;
+    border: 1px solid #000;
+    border-radius: 1em;
+    background-color: #fff;
+}
+p {
+    text-align: center;
+    font-size: .85em;
+}

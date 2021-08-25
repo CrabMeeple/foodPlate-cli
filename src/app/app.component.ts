@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   constructor(private titleService: Title, private userService: UserService) {
 
   }
-  private user: User;
+  user: User;
   ngOnInit() {
     this.titleService.setTitle("Welcome to FoodPlate");
     this.user = this.userService.getUser();
