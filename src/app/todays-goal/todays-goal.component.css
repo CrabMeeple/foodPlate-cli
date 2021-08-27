@@ -1,0 +1,25 @@
+li, input {
+    margin: 0;
+    padding: 0;
+  }
+  
+  span {
+    display: block;
+    text-align: left;
+    margin: 4px 0;
+  }
+  
+  ul li {
+    text-align: left;
+    display:inline;
+  }
+  ul {
+    list-style-type: none;
+  }
+  
+  input[type=radio] {
+    width:24px;
+    height:24px;
+    display: inline;
+  }
+  

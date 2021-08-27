@@ -1,0 +1,7 @@
+<h1>Today's Goal</h1>
+<ul>
+    <span *ngFor="let goal of goals">
+        <input type="radio" name="goal" (click)="sendGoal(goal)">
+        <li>{{ goal }}</li>
+    </span>
+</ul>

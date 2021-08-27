@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../models/User';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'fp-message',
@@ -8,10 +9,12 @@ import { User } from '../models/User';
 })
 export class MessageComponent implements OnInit {
 
-  @Input() user:User;
-  constructor() { }
+  @Input() currentUser:User;
+  constructor(private userService: UserService) {
+   }
 
   ngOnInit(): void {
+    this.userService.currentUser.subscribe(user => this.currentUser = user);
   }
 
 }

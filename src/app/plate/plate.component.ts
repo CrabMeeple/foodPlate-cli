@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { User } from '../models/User';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'fp-plate',
@@ -7,10 +9,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PlateComponent implements OnInit {
 
-  @Input() user;
-  constructor() { }
+  //@Input() user;
+  currentUser: User;
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+    this.userService.currentUser.subscribe(user => this.currentUser = user);
   }
   plateImgPath: string = '../../assets/images/plateImages/';
   fruitEmpty: string = `${this.plateImgPath}fruit-empty.png`;
