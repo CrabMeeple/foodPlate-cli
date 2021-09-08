@@ -17,13 +17,14 @@ export class UserService {
       return user;
     }
     else {
+      this.user.reqsStatus.fruitMet = true;
       return this.user;
     }
   }
   updateUser(user: User) {
     user.id = 1;
     user.registered = true;
-    user.reqsStatus = { fruitMet: false, vegMet: false, proteinMet: false, grainMet: false};
+    user.reqsStatus = { fruitMet: true, vegMet: false, proteinMet: false, grainMet: false};
     this.currentUser.next(user);
   }
 

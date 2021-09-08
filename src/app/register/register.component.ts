@@ -17,6 +17,7 @@ export class RegisterComponent implements OnInit {
     '2-3', '4-8', '9-13', '14-18', '19-30', '31-50', '51+'
   ];
   regForm: FormGroup;
+  submit: boolean;
 
   constructor(private userService: UserService, 
     private fb: FormBuilder, 
@@ -26,8 +27,7 @@ export class RegisterComponent implements OnInit {
         'email' : [null, Validators.compose([Validators.required, Validators.email])],
         'gender' : [null, [Validators.required]],
         'ageGroup' : [null, [Validators.required]]
-      },
-      {updateOn: 'blur'});
+      });
      }
 
   onSubmit(formValues) {
@@ -44,8 +44,15 @@ export class RegisterComponent implements OnInit {
     // };
     // localStorage.setItem('user', JSON.stringify(currentUser));
     // console.log(formValues);
+    this.submit = true;
     this.userService.updateUser(formValues);
     UserService.storeUserLocal(formValues);
+    this.router.navigate(['myPlate']);
+  }
+
+  canDeactivate(): boolean {
+    console.log(!this.regForm.touched);
+    return !this.regForm.touched || this.submit;
   }
 
   ngOnInit(): void {

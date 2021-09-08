@@ -1,0 +1,14 @@
+<section *ngIf="isLoading && !errorMessage" class="loadingMessage">
+    WAIT!!!! Retrieving Nutrition Data....
+</section>
+<select class="selectMenu" name="foodGroup" id="foodGroup" (change)="displayFoods($event.target.value)">
+    <option value="allFoods" selected>Select a food group</option>
+    <option *ngFor="let group of foodGroups" 
+   value="{{group}}">{{group}}</option>
+    </select>
+<section *ngIf="foodList">
+    <select name="foods" id="foods" size="10">
+        <option *ngFor="let item of foodListByGroup" value="" (click)="showNutrients(item)">{{ item.description }}</option>
+    </select>
+</section>
+<section *ngIf="errorMessage" class="errMessage"> {{ errorMessage }}</section>
